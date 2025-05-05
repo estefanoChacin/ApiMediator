@@ -1,0 +1,50 @@
+@ApiMediator_HostAddress = http://localhost:5248
+
+### Request to get the list of users
+
+GET {{ApiMediator_HostAddress}}/listusers/
+Accept: application/json
+
+###
+
+GET {{ApiMediator_HostAddress}}/user/681544e1665050f97a7b7141
+Accept: application/json
+###
+
+POST {{ApiMediator_HostAddress}}/CreateUser/
+Content-Type: application/json
+Accept: application/json
+
+{
+    "UserName": "John Doe",
+    "Password": "12345",
+    "Email": "prueba@gmail.com",
+    "ProductLastFour": "12324"
+}
+
+###
+
+DELETE {{ApiMediator_HostAddress}}/deleteuser/681544e1665050f97a7b7141
+Accept: application/json
+
+###
+### Request to get the list of Products
+
+GET {{ApiMediator_HostAddress}}/listproducts/
+Accept: application/json
+
+###
+
+GET {{ApiMediator_HostAddress}}/user/681544e1665050f97a7b7141
+Accept: application/json
+###
+
+POST {{ApiMediator_HostAddress}}/createproduct/
+Content-Type: application/json
+Accept: application/json
+
+{
+    "Name": "prueba producto 2 ",
+    "Description": "descripcion 2"
+}
+###

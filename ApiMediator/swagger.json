@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+      "title": "ApiMediator",
+      "version": "v1"
+    },
+    "paths": {
+      "/user/{id}": {
+        "get": {
+          "summary": "Obtener usuario por ID",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Usuario encontrado"
+            },
+            "404": {
+              "description": "Usuario no encontrado"
+            }
+          }
+        }
+      }
+    }
+  }
